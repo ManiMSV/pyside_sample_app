@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="Buttons">
+    <file>✔.png</file>
+    <file>❌.png</file>
+  </qresource>
+</RCC>
