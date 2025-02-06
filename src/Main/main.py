@@ -14,6 +14,7 @@ class main_window(qtw.QMainWindow, Ui_mw_main):
         super().__init__()
         self.setupUi(self)
         self.actionAdd_Person.triggered.connect(self.open_add_person)
+        self.actionQuit.triggered.connect(self.close)
 
     @qtc.Slot()
     def open_add_person(self):
