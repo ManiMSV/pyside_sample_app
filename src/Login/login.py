@@ -2,7 +2,7 @@ import sys
 import random
 from PySide6 import QtCore as qtc, QtWidgets as qtw, QtGui as qtg
 
-from UI.login_ui import Ui_w_loginform
+from .UI.login_ui import Ui_w_loginform
 
 class login_form(qtw.QWidget, Ui_w_loginform):
     def __init__(self):

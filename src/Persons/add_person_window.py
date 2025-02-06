@@ -2,7 +2,7 @@ import sys
 import random
 from PySide6 import QtCore as qtc, QtWidgets as qtw, QtGui as qtg
 
-from UI.add_person_window_ui import Ui_d_persons
+from .UI.add_person_window_ui import Ui_d_persons
 
 class add_person(qtw.QDialog, Ui_d_persons):
     def __init__(self):

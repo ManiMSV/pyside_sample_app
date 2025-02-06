@@ -5,9 +5,9 @@ from PySide6 import QtCore as qtc, QtWidgets as qtw, QtGui as qtg
 
 # sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),"..")))
 
-from UI.main_window_ui import Ui_mw_main
-# from Persons.add_person_window import add_person
-from src.Login.login import login_form
+from src.Main.UI.main_window_ui import Ui_mw_main
+from src.Persons import add_person_window
+from src.Login import login
 
 class main_window(qtw.QMainWindow, Ui_mw_main):
     def __init__(self):
@@ -17,7 +17,7 @@ class main_window(qtw.QMainWindow, Ui_mw_main):
 
     @qtc.Slot()
     def open_add_person(self):
-        self.form = login_form()
+        self.form = add_person_window.add_person()
         self.form.exec()
         
 
